@@ -1,0 +1,17 @@
+#pagination,
+#footer,
+#sidebar > ul {
+  display: none;
+}
+
+#sidebar-content {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+#sidebar-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+#sidebar-content > div.flex.justify-between.items-center > button {
+  display: none;
+}
