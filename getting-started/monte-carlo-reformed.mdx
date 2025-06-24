@@ -3,103 +3,53 @@ mode: "custom"
 title: "Monte Carlo, Reformed"
 ---
 
-<div className="relative min-h-screen flex flex-col items-center pt-12 overflow-x-hidden z-10">
-  {/* Fixed background video - top */}
-  <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden">
-    <div
-      className="
-        fixed
-        top-20 left-0 right-0
-        h-[60vh]
-        -z-10
-        pointer-events-none
-        overflow-hidden
-      "
-    >
-      <video
-        className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto
-                  transform -translate-x-1/2 -translate-y-1/2 object-cover opacity-60"
-        src="/videos/extropic-wide.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-    </div>
-  </div>
-
-{/* Bottom video - positioned at end of content */}
+{/* Main content */}
 
 {" "}
 
-<div
-  className="
-      absolute
-      bottom-0 left-0 right-0
-      h-[60vh]
-      -z-10
-      pointer-events-none
-      overflow-hidden
-      bg-black
-    "
->
-  <video
-    className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto
-                transform -translate-x-1/2 -translate-y-1/2 object-cover opacity-60"
-    src="/videos/extropic-footer.mp4"
-    autoPlay
-    loop
-    muted
-    playsInline
-  />
-</div>
-
-{/* Main content */}
-
-  <div className="relative z-10 flex flex-col items-center w-full">
-    <div className="text-white font-serif text-[120px] font-light tracking-wide mb-3 text-center leading-tight cormorant mt-10">
-      THE CODEX
+<div className="relative z-10 flex flex-col items-center w-full">
+  <div className="text-white font-serif text-[120px] font-light tracking-wide mb-3 text-center leading-tight cormorant mt-10">
+    THE CODEX
+  </div>
+  <div className="text-extropic-gray font-mono text-base font-normal mb-14 text-center leading-relaxed max-w-2xl">
+    A living archive of Extropic hardware, signal primitives, and entropy-based
+    computation.
+  </div>
+  <div className="flex flex-col gap-7 w-[700px] max-w-full mb-64">
+    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
+      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
+        WHY PHYSICAL NOISE
+      </div>
+      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
+        Discover the mission behind Extropic and the rise of analog
+        probabilistic logic.
+      </div>
     </div>
-    <div className="text-extropic-gray font-mono text-base font-normal mb-14 text-center leading-relaxed max-w-2xl">
-      A living archive of Extropic hardware, signal primitives, and entropy-based
-      computation.
+    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
+      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
+        MONTE CARLO, REFORMED
+      </div>
+      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
+        Discover the essence of innovation and the rise of dynamic probabilistic
+        reasoning.
+      </div>
     </div>
-    <div className="flex flex-col gap-7 w-[700px] max-w-full mb-64">
-      <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-        <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-          WHY PHYSICAL NOISE
-        </div>
-        <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-          Discover the mission behind Extropic and the rise of analog
-          probabilistic logic.
-        </div>
+    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
+      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
+        ENTROPY AS ENGINE
       </div>
-      <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-        <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-          MONTE CARLO, REFORMED
-        </div>
-        <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-          Discover the essence of innovation and the rise of dynamic probabilistic
-          reasoning.
-        </div>
+      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
+        Investigate the core objectives of innovation and the progression of
+        dynamic probabilistic reasoning.
       </div>
-      <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-        <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-          ENTROPY AS ENGINE
-        </div>
-        <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-          Investigate the core objectives of innovation and the progression of
-          dynamic probabilistic reasoning.
-        </div>
+    </div>
+    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
+      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
+        LONG-TERM TRAJECTORY
       </div>
-      <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-8 shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-        <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-          LONG-TERM TRAJECTORY
-        </div>
-        <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-          Examine the goals of innovation and the advancement of dynamic
-          probabilistic reasoning.
-        </div>
+      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
+        Examine the goals of innovation and the advancement of dynamic
+        probabilistic reasoning.
       </div>
     </div>
   </div>
