@@ -38,3 +38,13 @@ body {
 #sidebar-content > div.flex.justify-between.items-center > button {
   display: none;
 }
+
+#sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30; /* above content (0) and both videos (-20, -10) */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
