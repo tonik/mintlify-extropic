@@ -1,7 +1,30 @@
+@font-face {
+  font-family: "Suisse Intl Mono";
+  src: url("fonts/SuisseIntlMono-Regular.otf") format("opentype");
+}
+
+@theme {
+  --color-extropic-gray: #707473;
+}
+
+body {
+  font-family: "Suisse Intl Mono", monospace;
+}
+
 #pagination,
 #footer,
-#sidebar > ul {
+#sidebar > ul,
+#search-bar-entry > span {
   display: none;
+}
+
+.cormorant {
+  font-family: "Cormorant", serif !important;
+  letter-spacing: -1px !important;
+}
+
+#sidebar-title {
+  color: #fff;
 }
 
 #sidebar-content {
