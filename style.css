@@ -7,14 +7,44 @@
   --color-extropic-gray: #707473;
 }
 
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: black !important;
+  color: white !important;
+}
+
+html.dark,
+html[data-theme="dark"],
+.dark {
+  background: black !important;
+  color: white !important;
+}
+
 body {
   font-family: "Suisse Intl Mono", monospace;
+  background: black;
 }
 
 #pagination,
 #footer,
 #sidebar > ul {
   display: none;
+}
+
+#sidebar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* background: black; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .cormorant {
@@ -42,8 +72,14 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 30; /* above content (0) and both videos (-20, -10) */
-  background: rgba(0, 0, 0, 0.5);
+  background: #00000032;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  z-index: 30; 
+  border-right: none;
+}
+
+.prose {
+  font-family: "Suisse Intl Mono", monospace;
+  color: var(--color-extropic-gray);
 }

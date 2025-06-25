@@ -1,0 +1,28 @@
+export const BgVideoWide = () => {
+    const [currentUrl, setCurrentUrl] = React.useState(window.location.href);
+    const videoRef = React.useRef(null);
+    const isCorrectUrl = currentUrl.includes('getting-started/monte-carlo-reformed');
+
+    React.useEffect(() => {
+      const video = videoRef.current;
+      if (video && isCorrectUrl) {
+        video.play().catch(error => {
+          console.error('Error playing video:', error);
+        });
+      }
+    }, [currentUrl, isCorrectUrl]);
+    
+  return (
+    <video
+      ref={videoRef}
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover"
+    >
+      <source src="/bg-video-wide.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  );
+};
