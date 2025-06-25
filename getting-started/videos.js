@@ -1,4 +1,3 @@
-console.log(111);
 if (window.location.pathname.includes("getting-started/monte-carlo-reformed")) {
   // Wait for DOM to be fully loaded
   // Create top background video element
