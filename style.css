@@ -112,6 +112,15 @@ body {
   -webkit-backdrop-filter: blur(6px);
   z-index: 30; 
   border-right: none;
+  font-family: "Suisse Intl Mono";
+}
+
+#sidebar h5 {
+  font-family: "Suisse Intl Mono", monospace;
+}
+
+sidebar-content {
+  font-family: 'Suisse Intl Mono', monospace;
 }
 
 .prose {
