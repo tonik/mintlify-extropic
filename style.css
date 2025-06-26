@@ -148,6 +148,6 @@ sidebar-content {
   font-family: "Suisse Intl Mono" !important;
 }
 
-main > div {
+body > div:first-child {
   overflow: hidden;
 }
