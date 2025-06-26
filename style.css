@@ -34,10 +34,6 @@ body {
   background: black;
 }
 
-.mdx-content {
-  overflow: hidden;
-}
-
 #pagination,
 #footer,
 #sidebar > ul {
@@ -150,4 +146,8 @@ sidebar-content {
 
 .font-family-primary {
   font-family: "Suisse Intl Mono" !important;
+}
+
+main > div {
+  overflow: hidden;
 }
