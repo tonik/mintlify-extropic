@@ -7,13 +7,15 @@ title: "Why Physical Noise"
   {/* Centered background video within content */}
   <div className="fixed top-0 flex justify-center items-center z-0 pointer-events-none w-full">
     <video
-      className="w-full max-w-[80vw] h-auto object-cover opacity-60"
-      src="/videos/extropic.mp4"
+      className="w-full max-w-[1200px] h-auto object-cover opacity-60"
       autoPlay
       loop
       muted
       playsInline
-    ></video>
+    >
+      <source src="/videos/extropic.webm" type="video/webm" />
+      <source src="/videos/extropic.mp4" type="video/mp4" />
+    </video>
   </div>
 
 {/* Main content */}
@@ -69,14 +71,29 @@ title: "Why Physical Noise"
   </div>
 </div>
 
-  <div className="relative w-full mt-24 flex justify-center items-end z-20">
-    <video
-      className="w-full h-auto object-cover z-50"
-      src="/videos/extropic-footer.mp4"
-      autoPlay
-      loop
-      muted
-      playsInline
-    ></video>
-  </div>
+<div 
+  className="relative w-full mt-24 flex justify-center items-end 
+             before:content-[''] 
+             before:absolute 
+             before:bottom-full 
+             before:left-0 
+             before:right-0 
+             before:h-[400px] 
+             before:bg-gradient-to-t 
+             before:from-black 
+             before:to-transparent 
+             before:z-9"
+>
+  <video
+    className="w-full h-auto object-cover" 
+    src="/videos/extropic-footer.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+    <source src="/videos/extropic-footer.webm" type="video/webm" />
+    <source src="/videos/extropic-footer.mp4" type="video/mp4" />
+  </video>
+</div>
 </div>

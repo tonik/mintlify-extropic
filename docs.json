@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "Extropic",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#D67516",
     "light": "#D67516",
-    "dark": "#15803D"
+    "dark": "#D67516"
   },
   "fonts": {
     "family": "Suisse Intl Mono, monospace"

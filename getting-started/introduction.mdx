@@ -7,12 +7,14 @@ mode: "custom"
   {/* Fixed background video */}
   <video
     className="w-[460px] h-[373px] object-cover"
-    src="/videos/extropic.mp4"
     autoPlay
     loop
     muted
     playsInline
-  ></video>
+  >
+    <source src="/videos/extropic.webm" type="video/webm" />
+    <source src="/videos/extropic.mp4" type="video/mp4" />
+  </video>
 
 {/* Main content */}
 
@@ -68,7 +70,7 @@ mode: "custom"
 </div>
 
   <video
-    className="w-screen h-auto object-cover"
+    className="w-screen h-auto object-cover -mb-14"
     src="/videos/extropic-footer.mp4"
     autoPlay
     loop

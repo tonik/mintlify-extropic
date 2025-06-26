@@ -1,9 +1,11 @@
 
 export const TopVideo = () => {
 
-  return (
+  return useMemo(() => (
     <div
-      className="absolute w-screen pointer-events-none top-0 min-h-[400px] sm:ml-[0rem] lg:-ml-[9rem] left-1/2 -translate-x-1/2 z-0 flex items-center justify-center max-h-[720px] overflow-hidden"
+        id="top-video"
+        key="top-video"
+      className="absolute w-screen pointer-events-none top-0 min-h-[400px] sm:ml-[0rem] lg:-ml-[9rem] left-1/2 -translate-x-1/2 z-0 flex items-center justify-center max-h-[720px] overflow-hidden opacity-60"
     >
       <video
         autoPlay
@@ -15,5 +17,6 @@ export const TopVideo = () => {
       >
       </video>
     </div>
-  );
+  ), []);
 };
+

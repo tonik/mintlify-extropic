@@ -5,6 +5,10 @@
 
 @theme {
   --color-extropic-gray: #707473;
+  --color-extropic-gray-dark: #757A79;
+  --color-extropic-orange: #ff6a13;
+  --gray-700: blue;
+  --color-gray-700: blue;
 }
 
 :root {
@@ -47,6 +51,31 @@ body {
   z-index: -1;
 }
 
+#sidebar ul li a {
+  padding: 0 4px;
+  padding-left: 4px! important;
+}
+
+#sidebar li a > div {
+  padding: 6px 8px;
+}
+
+#sidebar li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#sidebar li a:not(.text-primary) {
+  color: var(--custom-inactive-nav-color) !important;
+}
+
+#sidebar li:hover a > div {
+  list-style: none;
+  color: #fff;
+  background-color: #FFFFFF22;
+}
+
 .cormorant {
   font-family: "Cormorant", serif !important;
   letter-spacing: -1px !important;
@@ -82,4 +111,9 @@ body {
 .prose {
   font-family: "Suisse Intl Mono", monospace;
   color: var(--color-extropic-gray);
+}
+
+/* //we currently override the element on the bottom of the main content (potentially a footter) */
+.leading-6.mt-14 {
+  margin-top: 0 !important;
 }
