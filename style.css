@@ -148,6 +148,7 @@ sidebar-content {
   font-family: "Suisse Intl Mono" !important;
 }
 
+/* main container - locally we have body main > div:first-child - in production we have no main */
 body > div:first-child {
   overflow: hidden;
 }
