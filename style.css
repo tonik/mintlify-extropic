@@ -34,7 +34,7 @@ body {
   background: black;
 }
 
-#mdx-content {
+.mdx-content {
   overflow: hidden;
 }
 
