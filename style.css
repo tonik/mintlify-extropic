@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&display=swap');
+
 @font-face {
   font-family: "Suisse Intl Mono";
-  src: url("fonts/SuisseIntlMono-Regular.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/Pmejna/font-host/SuisseIntlMono-Regular.otf") format("opentype");
 }
 
 @theme {
@@ -30,6 +32,10 @@ html[data-theme="dark"],
 body {
   font-family: "Suisse Intl Mono", monospace;
   background: black;
+}
+
+#mdx-content {
+  overflow: hidden;
 }
 
 #pagination,
@@ -116,4 +122,14 @@ body {
 /* //we currently override the element on the bottom of the main content (potentially a footter) */
 .leading-6.mt-14 {
   margin-top: 0 !important;
+  background-color: transparent !important;
+}
+
+/* // this is the overlay making issues with some background colgroup */
+.fixed.inset-0.bg-background-light.-z-10 {
+  background-color: transparent !important;
+}
+
+.font-family-primary {
+  font-family: "Suisse Intl Mono" !important;
 }
