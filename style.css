@@ -57,6 +57,14 @@ body {
   z-index: -1;
 }
 
+#search-bar-entry {
+  background: #23232380;
+}
+
+#search-bar-entry div svg {
+  color: #7D8281 !important;
+}
+
 #sidebar ul li a {
   padding: 0 4px;
   padding-left: 4px! important;
@@ -74,6 +82,7 @@ body {
 
 #sidebar li a:not(.text-primary) {
   color: var(--custom-inactive-nav-color) !important;
+  border-color: #23252680;
 }
 
 #sidebar li:hover a > div {
