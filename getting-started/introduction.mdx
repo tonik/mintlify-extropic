@@ -12,8 +12,10 @@ mode: "custom"
     muted
     playsInline
   >
-    <source src="/videos/extropic.webm" type="video/webm" />
+    <source src="/videos/extropic.webm" type="video/webm; codec='avc1.42E01E, mp4a.40.2'" />
+    <source src="/videos/extropic.mp4" type="video/mp4; codec='avc1.42E01E, mp4a.40.2'" />
     <source src="/videos/extropic.mp4" type="video/mp4" />
+    <source src="/videos/extropic.webm" type="video/webm" />
   </video>
 
 {/* Main content */}
@@ -71,10 +73,14 @@ mode: "custom"
 
   <video
     className="w-screen h-auto object-cover -mb-14"
-    src="/videos/extropic-footer.mp4"
     autoPlay
     loop
     muted
     playsInline
-  ></video>
+  >
+    <source src="/videos/extropic-footer.mp4" type="video/mp4; codec='avc1.42E01E, mp4a.40.2'" />
+    <source src="/videos/extropic-footer.webm" type="video/webm; codec='avc1.42E01E, mp4a.40.2'" />
+    <source src="/videos/extropic-footer.mp4" type="video/mp4" />
+    <source src="/videos/extropic-footer.webm" type="video/webm" />
+  </video>
 </div>
