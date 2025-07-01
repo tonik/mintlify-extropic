@@ -5,58 +5,44 @@ mode: "custom"
 
 import { TopVideo } from "/snippets/hero-background-video.mdx";
 import { FooterVideo } from "/snippets/footer-video.mdx";
+import { Wrapper } from "/snippets/wrapper.mdx";
 
 
 <TopVideo />
+<Wrapper>
+## How LaTeX Works in Mintlify ➗
 
-{" "}
+Mintlify makes it incredibly simple to include mathematical notation in your documentation. You don't need to install any extra packages or configure complex plugins. It just works out of the box!
 
-<div className="relative z-10 flex flex-col items-center w-full mt-[128px]">
-  <div className="text-white font-serif text-[120px] font-light tracking-wide mb-3 text-center leading-tight cormorant mt-10">
-    THE CODEX
-  </div>
-  <div className="text-extropic-gray font-mono text-base font-normal mb-14 text-center leading-relaxed max-w-2xl">
-    A living archive of Extropic hardware, signal primitives, and entropy-based
-    computation.
-  </div>
-  <div className="flex flex-col gap-7 w-[800px] max-w-full mb-64">
-    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-[46px] shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-        WHY PHYSICAL NOISE
-      </div>
-      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-        Discover the mission behind Extropic and the rise of analog
-        probabilistic logic.
-      </div>
-    </div>
-    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-[46px] shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-        MONTE CARLO, REFORMED
-      </div>
-      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-        Discover the essence of innovation and the rise of dynamic probabilistic
-        reasoning.
-      </div>
-    </div>
-    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-[46px] shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-        ENTROPY AS ENGINE
-      </div>
-      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-        Investigate the core objectives of innovation and the progression of
-        dynamic probabilistic reasoning.
-      </div>
-    </div>
-    <div className="bg-black/70 border-2 border-gray-500/20 rounded-xl p-[46px] shadow-lg hover:border-orange-400 hover:bg-black/85 hover:shadow-orange-400/10 transition-all">
-      <div className="text-white font-serif text-4xl font-light mb-3 tracking-wide cormorant">
-        LONG-TERM TRAJECTORY
-      </div>
-      <div className="text-extropic-gray font-mono text-base font-normal leading-relaxed">
-        Examine the goals of innovation and the advancement of dynamic
-        probabilistic reasoning.
-      </div>
-    </div>
-  </div>
-</div>
+This allows you to seamlessly blend technical documentation with complex formulas, making your content richer and more precise.
 
+---
+
+### Inline Equations
+
+You can easily embed formulas directly within your text by wrapping your LaTeX code in single dollar signs (`$`). This is perfect for mentioning variables or short expressions without breaking the flow of a sentence.
+
+**For example:**
+
+The famous mass-energy equivalence is expressed as $E=mc^2$. Similarly, to find the roots of a quadratic equation, $ax^2 + bx + c = 0$, one can use the quadratic formula.
+
+---
+
+### Block-Level Equations
+
+For more complex or important equations that deserve their own space, you can use double dollar signs (`$$`). This will render the equation as a centered block.
+
+**For example:**
+
+The Fourier Transform is a beautiful mathematical tool, represented as:
+
+$$
+\hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i x \xi} dx
+$$
+
+Here is the formula for the standard deviation, a key concept in statistics:
+$$
+\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2}
+$$
+</Wrapper>
 <FooterVideo />

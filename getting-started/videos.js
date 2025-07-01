@@ -7,6 +7,11 @@ let videosCreated = false;
 
 // Function to create videos (only called once)
 function createVideos() {
+  const urlBase = "https://mintlify.s3.us-west-1.amazonaws.com/tonik-a57c11a2/videos/";
+  const isLocalHost = window.location.hostname === "localhost" || window.location.hostname === "";
+  const url = isLocalHost ? '/videos/extropic-wide' : urlBase + 'extropic-wide';
+
+  console.log("Creating videos...");
   // Skip if videos are already created
   if (videosCreated) {
     return;
@@ -40,7 +45,8 @@ function createVideos() {
     `;
 
   // Add video source (replace with your video URL)
-  topVideo.src = "/videos/extropic-wide.mp4";
+  topVideo.src = 
+    isLocalHost ? '/videos/extropic-wide.mp4' : url + '.mp4';
 
   // Insert at the beginning of body - with error handling
   try {

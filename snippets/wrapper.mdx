@@ -1,0 +1,12 @@
+
+export const Wrapper = ({ children }) => {
+  return (
+    <div>
+        <div className="relative z-10 flex flex-col items-center w-full mt-[128px]" id='wrapper'>
+            <div className="mx-auto max-w-[900px]">
+                {children}
+            </div>
+        </div>
+    </div>
+  );
+};

@@ -152,3 +152,34 @@ sidebar-content {
 body > div:first-child {
   overflow: hidden;
 }
+
+#wrapper > p {
+  padding: 8px 0;
+}
+
+#wrapper > h1, h2, h3, h4, h5, h6 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+#wrapper {
+  color: white;
+}
+
+#wrapper  hr {
+  border-color: #b9b0b0b0;
+  margin: 32px 0;
+}
+
+#wrapper :not(pre)>code {
+  background-color: #ff6a13;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.katex-html {
+  color: #fff;
+  background-color: #340b05b0;
+  padding: 8px;
+}
