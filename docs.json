@@ -18,10 +18,10 @@
         "group": "Getting Started",
         "pages": [
           "getting-started/introduction",
-          "getting-started/why-physical-noise",
-          "getting-started/monte-carlo-reformed",
-          "getting-started/entropy-as-engine",
-          "getting-started/long-term-trajectory"
+          "getting-started/layout-1",
+          "getting-started/layout-2",
+          "getting-started/layout-3",
+          "getting-started/monte-carlo-reformed"
         ]
       },
       {
@@ -58,16 +58,16 @@
         ]
       },
       {
-        "group": "Sampling Primitives",
+        "group": "Seamless Experimental",
         "pages": [
-          "sampling-primitives/primitive-index",
-          "sampling-primitives/pbit-binary-pulse",
-          "sampling-primitives/pdit-discrete-emitter",
-          "sampling-primitives/brownian-gyrator",
-          "sampling-primitives/gmm-clustered-drift",
-          "sampling-primitives/linking-artifacts"
+          "seamless-experimental/primitive-index",
+          "seamless-experimental/pbit-binary-pulse",
+          "seamless-experimental/pdit-discrete-emitter",
+          "seamless-experimental/brownian-gyrator",
+          "seamless-experimental/gmm-clustered-drift",
+          "seamless-experimental/linking-artifacts"
         ]
-      }
+      }   
     ]
   },
   "logo": {
@@ -75,7 +75,7 @@
     "dark": "/logo/logo.svg"
   },
   "appearance": {
-    "mode": "dark",
+    "default": "dark",
     "strict": false
   }
 }

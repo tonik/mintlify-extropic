@@ -162,12 +162,13 @@ function hideVideos() {
   }
   if (bottomVideo) {
     bottomVideo.style.display = "none";
+    bottomVideo.style.display = "none";
   }
 }
 
 // Function to check if current path should show videos
 function shouldShowVideos() {
-  return window.location.pathname.includes("system-overview/");
+  return window.location.pathname.includes("seamless-experimental/");
 }
 
 // Function to handle pathname changes

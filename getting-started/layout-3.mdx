@@ -1,0 +1,80 @@
+---
+title: "Layout 3"
+mode: "custom"
+---
+
+import { TopVideo } from "/snippets/hero-background-video.mdx";
+import { FooterVideo } from "/snippets/footer-video.mdx";
+import { Wrapper } from "/snippets/wrapper.mdx";
+
+<TopVideo />
+<Wrapper>
+## Powering Computation with Entropy
+
+Harnessing entropy is not just a theoretical concept; it's a practical engine for next-generation computing. Here's how you can tap into it.
+
+### Code Blocks
+
+Showcasing code is crucial. Here is an example of how to initialize the entropy source and get a stream of random bits.
+
+```python
+import extropic
+
+# Initialize the core entropy engine
+engine = extropic.EntropyEngine()
+
+# Start the stream
+stream = engine.start_stream()
+
+# Read 1024 bytes of random data
+random_data = stream.read(1024)
+
+print(f"Successfully read {len(random_data)} bytes of entropy.")
+```
+
+### Callouts
+
+Use callouts to highlight important information.
+
+<Card icon="lightbulb" title="Note">
+  The quality of entropy is paramount for cryptographic applications. Our hardware ensures true randomness.
+</Card>
+
+### Tables
+
+Tables are great for structured data. Here's a comparison of different entropy sources.
+
+| Source              | Quality | Speed     | Cost     |
+| ------------------- | ------- | --------- | -------- |
+| **Extropic HWRNG**  | High    | Very Fast | Low      |
+| Pseudorandom (PRNG) | Low     | Fast      | Very Low |
+| Other TRNGs         | Medium  | Slow      | High     |
+
+### Images
+
+Visuals can explain complex topics. Here's a diagram showing the system passing all checks.
+
+<img
+  src="/images/checks-passed.png"
+  alt="All checks passed"
+/>
+
+### Mathematical Notation
+
+For mathematical expressions, you can use LaTeX syntax.
+
+**Inline Equations**
+
+Embed formulas directly in your text with single dollar signs (`$`). For example, the entropy `H(X)` of a discrete random variable `X` is given by $H(X) = -\sum_{i=1}^{n} p(x_i) \log_b p(x_i)$.
+
+**Block-Level Equations**
+
+For more complex equations, use double dollar signs (`$$`) to render them as a centered block. For instance, the Shannon entropy formula is:
+
+$$
+H(X) = -\sum_{i=1}^{n} P(x_i) \log_2 P(x_i)
+$$
+
+This is fundamental to understanding the amount of information in a message.
+</Wrapper>
+<FooterVideo />
